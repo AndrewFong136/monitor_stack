@@ -1,0 +1,10 @@
+- targets:
+  - http://truenas.mxlabs.org
+  - http://nextcloud.mxlabs.org
+  - http://n8n.mxlabs.org
+  - http://adguard.mxlabs.org
+  - http://wireguard.mxlabs.org
+  - http://traefik.mxlabs.org
+  labels:
+    name: blackbox
+    module: http_2xx
