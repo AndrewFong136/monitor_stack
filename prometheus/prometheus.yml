@@ -1,0 +1,14 @@
+global:
+  scrape_interval: 15s
+scrape_configs:
+  - job_name: 'node'
+    static_configs:
+      - targets: ['192.168.68.100:12345', '192.168.68.52:12345', '192.168.68.53:12345']
+
+  - job_name: 'cadvisor'
+    static_configs:
+      - targets: ['192.168.68.100:12345']
+
+  - job_name: 'blackbox'
+    static_configs:
+      - targets: ['192.168.68.100:12345']
